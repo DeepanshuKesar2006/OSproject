@@ -83,16 +83,7 @@ sudo tc qdisc add dev enp0s8 root handle 1: htb default 3
 sudo tc class add dev enp0s8 parent 1: classid 1:1 htb rate 5mbit
 sudo tc class add dev enp0s8 parent 1: classid 1:2 htb rate 2mbit
 sudo tc class add dev enp0s8 parent 1:3 htb rate 1mbit
-Installation
 
-Clone repository:
-
-git clone https://github.com/yourusername/ml-os-network-scheduler.git
-cd ml-os-network-scheduler
-
-Install dependencies:
-
-pip install scapy pandas scikit-learn matplotlib joblib
 Run the Project
 Jupyter Notebook Version
 jupyter notebook
